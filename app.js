@@ -2,10 +2,7 @@ const express = require("express");
 const app = express();
 
 app.get("/", function (req, res) {
-  res.send("IT WORKED");
-});
-app.get("/new", function (req, res) {
-  res.send("New also worked");
+  res.send("Blue environment");
 });
 
 app.listen(process.env.PORT || 5000);
